@@ -51,6 +51,7 @@ print(img_4d.shape)
 syn_img = g_AB.predict(img_4d)
 # Make it 3D
 img_B = np.squeeze(syn_img, axis=0)
+img_B = cv2.resize(img_B, (450, 50))
 
 # Rescale images 0 - 1
 img_B = 0.5 * img_B + 0.5
