@@ -39,7 +39,7 @@ dataset/
 
 ### Usage
 
-As always, `requirements.txt` for necessary packages. 
+As always, run `pip install requirements.txt` for necessary packages. 
 
 ### Training
 
