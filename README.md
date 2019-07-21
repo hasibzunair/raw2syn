@@ -48,7 +48,7 @@ Output during the end of training.
 
 ### Inference
 
-Using the generator which transforms image from real OCR image and generate a synthetic OCR image.
+Using the [generator script](https://github.com/hasibzunair/raw2syn/blob/master/generate.py) which transforms image from real OCR image to a synthetic OCR image. The output is given below.
 
 Input to the generator:
 ![alt text center](media/input.jpg)
