@@ -21,7 +21,7 @@ outputs # demo images for showing output
 
 #### Dataset directory strucuture:
 
-This is divided in the following file structure for the training regiment.
+This is divided in the following file structure for the training regiment. The images are all in JPG format.
 
 ```
 dataset/
@@ -33,7 +33,8 @@ dataset/
 		
 		# 80% of Domain_A and Domain_B
 		train_A/
-			# real world images for training				    train_B/
+			# real world images for training				    
+		train_B/
 			# synthetic images for training
 		
 		# 20% of Domain_A and Domain_B
@@ -42,6 +43,11 @@ dataset/
 		test_B/
 			# around 300 samples synthetic images
 ```
+
+### Output
+
+![alt text center](media/0_0.png)
+
 
 ####  Referece
 * [Keras-GAN](https://github.com/eriklindernoren/Keras-GAN)
