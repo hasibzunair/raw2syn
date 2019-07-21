@@ -4,18 +4,12 @@ The project is structured as follows.
 
 #### Codebase structure
 
-```
-dataset # training data
-
-images # save generated images here
-
-saved_model # save weights and model configurations here
-
-test_imgs # images for testing/generating target domain images
-
-outputs # demo images for showing output
-
-.py files #python scripts for training and inference
+* `dataset`: training data
+* `images`: save generated images here 
+* `saved_model`: save weights and model configurations here
+* `test_imgs`: images for testing/generating target domain images
+* `outputs` : demo images for showing output
+* `.py` files #python scripts for training and inference
 
 ```
 
@@ -61,9 +55,11 @@ Using the generator which transforms image from real OCR image and generate a sy
 Input to the generator:
 ![alt text center](media/input.jpg)
 
+<br/>
+
 Output from the generator:
 ![alt text center](media/output.jpg)
 
 
-####  Referece
+###  Referece
 * [Keras-GAN](https://github.com/eriklindernoren/Keras-GAN)

@@ -27,6 +27,7 @@ import cv2
 
 def load_img(path):
         img = cv2.imread(path)
+        print(img.shape)
         img = cv2.resize(img, (256, 256))
         img = img/127.5 - 1.
         return img
@@ -51,7 +52,7 @@ print(img_4d.shape)
 syn_img = g_AB.predict(img_4d)
 # Make it 3D
 img_B = np.squeeze(syn_img, axis=0)
-img_B = cv2.resize(img_B, (450, 50))
+img_B = cv2.resize(img_B, (564, 64))
 
 # Rescale images 0 - 1
 img_B = 0.5 * img_B + 0.5
