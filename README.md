@@ -44,9 +44,25 @@ dataset/
 			# around 300 samples synthetic images
 ```
 
-### Output
+### Training
+
+Output when training is initiated.
 
 ![alt text center](media/0_0.png)
+
+Output during the end of training.
+
+![alt text center](media/20_1500.png)
+
+### Inference
+
+Using the generator which transforms image from real OCR image and generate a synthetic OCR image.
+
+Input to the generator:
+![alt text center](media/input.jpg)
+
+Output from the generator:
+![alt text center](media/output.jpg)
 
 
 ####  Referece
