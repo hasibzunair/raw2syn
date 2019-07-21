@@ -1,6 +1,6 @@
-### Raw to synthetic domain transformation for OCR images. 
+### raw2syn - Raw to synthetic domain transformation for OCR image data. 
 
-The project is structured as follows.
+Here, the task is to devise a model which learns the function or mapping between the two domains. The motivation for using cyclegan are twofold: the architecture uses and end-to-end approach; training does not require pairs of images but rather requires two unpaired collection of data points from different distributions. This is, in our case, real world(Domain A) and synthetic(Domain B) OCR images. 
 
 #### Codebase structure
 
@@ -13,7 +13,7 @@ The project is structured as follows.
 
 #### Dataset directory strucuture:
 
-This is divided in the following file structure for the training regiment. The images are all in JPG format.
+This is divided in the following file structure for the training regiment. The images are all in JPG format. For training, we construct our dataset which consists of the two categories of data points; real world and synthetic OCR images which are resized to 256x256. For both distributions we use 4000 samples, a total of 8000 samples for training. More training details [here](https://github.com/hasibzunair/raw2syn/blob/master/cyclegan_ocr.py). Not sharing the dataset here as I am not allowed to lol.
 
 ```
 dataset/
@@ -35,6 +35,11 @@ dataset/
 		test_B/
 			# around 300 samples synthetic images
 ```
+
+
+### Usage
+
+As always, `requirements.txt` for necessary packages. 
 
 ### Training
 
@@ -58,4 +63,5 @@ Output from the generator:
 
 
 ###  Referece
+* [Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks](https://arxiv.org/abs/1703.10593)
 * [Keras-GAN](https://github.com/eriklindernoren/Keras-GAN)
