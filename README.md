@@ -55,8 +55,6 @@ Using the generator which transforms image from real OCR image and generate a sy
 Input to the generator:
 ![alt text center](media/input.jpg)
 
-<br/>
-
 Output from the generator:
 ![alt text center](media/output.jpg)
 
