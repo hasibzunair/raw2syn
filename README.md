@@ -11,8 +11,6 @@ The project is structured as follows.
 * `outputs` : demo images for showing output
 * `.py` files #python scripts for training and inference
 
-```
-
 #### Dataset directory strucuture:
 
 This is divided in the following file structure for the training regiment. The images are all in JPG format.
